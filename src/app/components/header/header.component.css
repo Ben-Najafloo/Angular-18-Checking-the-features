@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+span{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+span:hover {
+    font-size: large;
+}

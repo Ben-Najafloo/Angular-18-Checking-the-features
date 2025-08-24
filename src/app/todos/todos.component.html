@@ -1,0 +1,12 @@
+<p>todos list!</p>
+@if(!todoItems().length){
+    <p>Is Loading...</p>
+}
+<ul>
+    @for (todo of todoItems().slice(0, 16); track todo.id) {
+        <li>
+            <input id="todo-{{ todo.id }}" type="checkbox" value="{{ todo.isDone }}">
+            <label for="todo-{{ todo.id }}">{{ todo.title}}</label>
+        </li>
+    }
+</ul>
